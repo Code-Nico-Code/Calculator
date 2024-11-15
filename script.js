@@ -2,7 +2,7 @@ const display = document.getElementById("display");
 
 // Append text to the display at the cursor position
 function appendToDisplay(input) {
-    if (display.value === "Error") {
+    if (display.value === "Get a life...😒😒") {
         display.value = "";  // Clear the error message
     }
 
@@ -26,7 +26,7 @@ function calculate() {
     try {
         display.value = eval(display.value);
     } catch (error) {
-        display.value = "Error";
+        display.value = "Get a life...😒😒";
     }
 }
 
@@ -82,5 +82,11 @@ document.addEventListener("keydown", function(e) {
 
     if (e.key === 'ArrowRight') {
         setCursorPosition(display.selectionStart + 1);  // Move cursor to the right
+    }
+    if(e.key==='('){
+        appendToDisplay(e.key);
+    }
+    if(e.key===')'){
+        appendToDisplay(e.key);
     }
 });

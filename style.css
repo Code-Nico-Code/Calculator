@@ -1,0 +1,98 @@
+/* General styles for body */
+body {
+    font-family: 'Poppins', sans-serif; /* Google font */
+    background-color: #f0f0f0; /* Light gray background */
+    height: 100vh;
+    margin: 0;
+}
+#calh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.cal{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Calculator container */
+#Calculator {   
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Display input */
+#display { 
+    padding-right:10px;
+    width:100%;
+    height: 70px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+ }
+
+
+/* Keys container */
+#Keys {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 10px;
+}
+
+/* Button styles */
+button {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #d9d9d9;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Operator buttons */
+.operator-btn {
+    background-color: #f29c11;
+    color: white;
+}
+
+.operator-btn:hover {
+    background-color: #f79c42;
+}
+
+/* Active button click effect */
+button:active {
+    transform: scale(0.95); /* Slight shrink effect */
+}
+
+/* Clear button */
+button.clear {
+    background-color: #ff4e4e;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #ff3333;
+}
+
